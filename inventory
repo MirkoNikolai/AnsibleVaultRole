@@ -1,2 +1,1 @@
-[all]
-18.219.26.226
+bootstrap ansible_host=192.168.103.45 ansible_user=ubuntu ansible_become=yes ansible_connection=ssh 

@@ -13,6 +13,14 @@
     createhome: "no"
     state: present
 
+- name: Creatint vault storage directory
+  file:
+    state: directory
+    path: "{{ vault_storage_dir }}"
+    owner: "{{ vault_user }}"
+    group:  "{{ vault_group }}" 
+    mode: 0755
+
 - name: Install prerequisites
   package:
     name: "{{ item }}"
